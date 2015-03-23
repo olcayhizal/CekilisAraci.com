@@ -1,0 +1,269 @@
+
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+html {
+  background:#1d1d1f;
+  min-width: 960px;
+ 
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  color: #fff;
+}
+
+.inner {
+  width: 960px;
+  margin: 0 auto;
+  overflow:hidden;
+}
+
+body{
+  margin:0;
+  padding:0;
+}
+
+
+/**
+ *  Header
+ */
+
+
+.header {
+  background: url(../images/back.jpg) no-repeat 50% 0;
+}
+.header a.engagingnetworks {
+  display:block;
+  margin: 22px 0 0 60px;
+  
+  text-indent:-999px;
+  background: url(../images/cekilisaraci.png) no-repeat;
+  background-size: 210px 70px;
+  height: 70px;
+  width: 210px;
+  float:left;
+}
+.header .menu-top {
+  float:right;
+}
+.header .menu-top ul {
+  margin:0;
+  list-style:none;
+  line-height:1;
+}
+.header .menu-top li {
+  float:left;
+  padding: 14px 8px;
+  border-left: solid 1px #49494a;
+
+  text-shadow: 0px 2px 1px #000;
+  color:#fff;
+}
+.header .menu-top li:first-child {
+  border-left:0;
+}
+.header .menu-top li a {
+  display:block;
+  text-decoration:none;
+  color:#fff;
+}
+
+.header .menu-top label {
+  color:#828282;
+  line-height:37px;
+  display:inline-block;
+  vertical-align:top;
+}
+
+.header .menu-top li.country {
+  padding: 2px 8px;
+}
+.header .menu-top li.country label {
+  display:inline-block;
+  padding: 0;
+}
+html.js .header .menu-top li.country select {
+-webkit-appearance: none;
+}
+.header .menu-top li.country select {
+  width:80px;
+  background: transparent;
+}
+.header .menu-top li.country .selectBox-dropdown {
+  background:transparent;
+}
+.header .menu-top li.country .selectBox-dropdown .selectBox-arrow {
+  background-position: -25px center;
+}
+.header .menu-top li.country .selectBox-dropdown.selectBox-active {
+  background: #828282;
+}
+.header .menu-top li.country .selectBox-dropdown.selectBox-active .selectBox-arrow {
+  background-position: 0 center;
+}
+.header .menu-top li.country .selectBox-dropdown.selectBox-menuShowing {
+  background:#828282;
+}
+
+.header .menu-top li.tw,
+.header .menu-top li.in {
+  padding: 12px 8px;
+  
+}
+.header .menu-top li.tw a,
+.header .menu-top li.in a {
+  display:block;
+  width:20px;
+  height:17px;
+  text-indent:-999px;
+  overflow:hidden;
+  background:url(../images/social.png) no-repeat;
+}
+.header .menu-top li.in a {
+  background-position: -20px 0;
+}
+
+.header .header-content {
+  clear:both;
+}
+.header .header-content-inner {
+  overflow:hidden;
+  padding:30px 0 15px 0;
+}
+.header .inner {
+  position:relative;
+}
+.header a.header-content-toggle{
+  display:block;
+  overflow:hidden;
+  text-indent:-999px;
+  width: 55px;
+  height: 73px;
+  background: url(../images/header-arrows.png) no-repeat 100% 0;
+  
+  position:absolute;
+  right:0px;
+  bottom:10px;
+
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  -ms-transition: all 500ms;
+}
+.header a.header-content-toggle.closed{
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  /* IE6–IE9 */
+  filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.9914448613738104, M12=-0.13052619222005157,M21=0.13052619222005157, M22=0.9914448613738104, sizingMethod='auto expand');
+  zoom: 1;
+}
+
+/**
+ * Main menu
+ */
+.header .menu-main {
+  clear:left;
+  padding-top:6px;
+}
+.header .menu-main ul{
+  list-style:none;
+  line-height:1;
+  margin:0;
+}
+.header .menu-main li {
+  float:left;
+  padding-top:14px;
+}
+.header .menu-main li:first-child a{
+  border:0;
+  padding-left:20px;
+}
+.header .menu-main li a{
+  display:block;
+  color:#fff;
+  text-decoration:none;
+
+  text-shadow: 0px 2px 1px #000;
+  padding: 8px 9px 19px 9px;
+  border-left: solid 1px #555556;
+
+}
+
+
+
+.header .menu-main li.campaigning,
+.header .menu-main li.advocacy {
+  border-bottom: solid 4px #f2385a;
+}
+.header .menu-main li.fundraising {
+  border-bottom: solid 4px #f5a503;
+}
+.header .menu-main li.email {
+  border-bottom: solid 4px #4ad9d9;
+}
+.header .menu-main li.crm {
+  border-bottom: solid 4px #00b2d9;
+}
+
+.header .menu-main li.campaigning a,
+.header .menu-main li.advocacy a,
+.header .menu-main li.fundraising a,
+.header .menu-main li.email a,
+.header .menu-main li.crm a {
+  padding-bottom:15px;
+}
+
+
+
+.header .menu-main li:hover, .header .menu-main li.active {
+  border-bottom:0;
+  background: url(../images/menu-active-backgrounds.png) no-repeat -1600px 0;
+}
+.header .menu-main li.campaigning, .header .menu-main li.campaigning.active,
+.header .menu-main li.advocacy, .header .menu-main li.advocacy.active {
+  background-position:0 0;
+}
+.header .menu-main li.fundraising, .header .menu-main li.fundraising.active {
+  background-position:-400px 0;
+}
+.header .menu-main li.email, .header .menu-main li.email.active {
+  background-position:-800px 0;
+}
+.header .menu-main li.crm, .header .menu-main li.crm.active {
+  background-position:-1200px 0;
+}
+
+
+.header .menu-main li:hover a, .header .menu-main li.active a{
+  padding-bottom:19px;
+}
+
+
+
+.body{background: #f0f0f0;  color: #28282a;}
+
+.ana-aciklama{
+  font-size: 37px;
+  letter-spacing: -1px;
+  line-height: 1.3;
+  margin-top: 15px;
+  margin-right: 0px;
+  margin-left: 0px;
+  text-align: center;
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-weight: normal;
+}
+
+.ana-aciklamakucuk{
+  font-size: 25px;
+  letter-spacing: -1px;
+  line-height: 1.3;
+  text-align: center;
+  padding-bottom: 40px;
+  font-weight: normal;
+}
